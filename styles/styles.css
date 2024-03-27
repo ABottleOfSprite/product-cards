@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111111;
+  position: relative;
+  padding-bottom: 500px;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+
+::-webkit-scrollbar-corner {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff730048;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+.container {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  justify-content:center;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  width: 100vw;
+  height: fit-content;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 27.9rem;
+  background-color: black;
+  color: white;
+  font-family: "Afacad", sans-serif;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 5px black;
+  transition: all 0.6s ease-in-out;
+  filter: grayscale(20%) brightness(95%) saturate(98%);
+  overflow: hidden;
+  
+}
+
+.product-container:hover {
+  box-shadow: 0 0 18px black;
+  filter: grayscale(0%)  brightness(105%) saturate(110%) contrast(110%);
+}
+
+.image-container {
+  width: 20rem;
+  height: fit-content;
+  background-color: rgb(0, 0, 0);
+}
+
+.product-image {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+.product-info {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.product-name {
+  font-size: 1.5rem;
+  font-weight:400;
+  cursor: pointer;
+}
+
+.price-current {
+  color: #ff7300;
+  font-weight:600;
+  font-size: 1.1rem;
+  text-align: right;
+  margin: 0px 10px;
+
+}
+
+
+.price-current strong {
+  color: gray;
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.buttons-container {
+  height: 3rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.heart-button {
+  background-color: transparent;
+  border: none;
+  filter: invert(100%);
+  cursor: pointer;
+  margin-bottom: -4px;
+}
+
+.side-separator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  padding: 5px;
+  margin: 0px 10px;
+}
+
+.cart-button {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
+  margin: 0 10px;
+}
+
+.play-demo-text {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 5px;
+  padding-left: 0px;
+  margin: 0 10px;
+}
+
+.play-demo-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-bottom: -4px;
+}
+
